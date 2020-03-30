@@ -188,6 +188,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocketship
       objectReference: {fileID: 0}
+    - target: {fileID: 5122036942612053110, guid: f998f01b93a22b34d9a64b814d4b0abe,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 887e0b81aeb9ed84eaf99bdf8966c29f, type: 2}
+    - target: {fileID: 6482056276582845662, guid: f998f01b93a22b34d9a64b814d4b0abe,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3199276
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f998f01b93a22b34d9a64b814d4b0abe, type: 3}
 --- !u!108 &705507994 stripped
@@ -241,7 +251,7 @@ PrefabInstance:
     - target: {fileID: 3595410487374768254, guid: f1a118b0955195c489aa9c936a3381cf,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3595410487374768254, guid: f1a118b0955195c489aa9c936a3381cf,
         type: 3}
@@ -315,7 +325,7 @@ PrefabInstance:
     - target: {fileID: 1900724005432122564, guid: 04e09be66f4e83c4b827b68cf7cb1fb2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1900724005432122564, guid: 04e09be66f4e83c4b827b68cf7cb1fb2,
         type: 3}
@@ -478,7 +488,7 @@ PrefabInstance:
     - target: {fileID: 7942989861856066078, guid: 97625f6b3cd2f69458006b405ad9e138,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7942989861856066078, guid: 97625f6b3cd2f69458006b405ad9e138,
         type: 3}
