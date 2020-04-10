@@ -138,7 +138,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 917270305, guid: f998f01b93a22b34d9a64b814d4b0abe, type: 3}
       propertyPath: m_Mass
-      value: 0.3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 917270307, guid: f998f01b93a22b34d9a64b814d4b0abe, type: 3}
+      propertyPath: rcsThrust
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 917270307, guid: f998f01b93a22b34d9a64b814d4b0abe, type: 3}
+      propertyPath: mainThrust
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 945171693326615501, guid: f998f01b93a22b34d9a64b814d4b0abe,
         type: 3}
@@ -539,7 +547,7 @@ PrefabInstance:
     - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -38.44
+      value: -46.1
       objectReference: {fileID: 0}
     - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
         type: 3}
