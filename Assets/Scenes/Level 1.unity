@@ -1035,21 +1035,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3595410487374768254, guid: 5f8c5356e9712d444ba4fd5be6199208,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 13.790968
-      objectReference: {fileID: 0}
-    - target: {fileID: 3595410487374768254, guid: 5f8c5356e9712d444ba4fd5be6199208,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 8.584554
-      objectReference: {fileID: 0}
-    - target: {fileID: 3595410487374768254, guid: 5f8c5356e9712d444ba4fd5be6199208,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6441411
-      objectReference: {fileID: 0}
     - target: {fileID: 3738110573485360740, guid: 5f8c5356e9712d444ba4fd5be6199208,
         type: 3}
       propertyPath: m_Name
@@ -1748,30 +1733,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3595410487374768254, guid: f1a118b0955195c489aa9c936a3381cf,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 14.136369
-      objectReference: {fileID: 0}
-    - target: {fileID: 3595410487374768254, guid: f1a118b0955195c489aa9c936a3381cf,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.7176859
-      objectReference: {fileID: 0}
-    - target: {fileID: 3595410487374768254, guid: f1a118b0955195c489aa9c936a3381cf,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 14.731796
-      objectReference: {fileID: 0}
     - target: {fileID: 3738110573485360740, guid: f1a118b0955195c489aa9c936a3381cf,
         type: 3}
       propertyPath: m_Name
       value: Launch Pad
-      objectReference: {fileID: 0}
-    - target: {fileID: 6687517462988339788, guid: f1a118b0955195c489aa9c936a3381cf,
-        type: 3}
-      propertyPath: m_ReceiveShadows
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1a118b0955195c489aa9c936a3381cf, type: 3}
