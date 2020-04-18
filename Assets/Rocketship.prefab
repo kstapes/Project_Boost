@@ -254,8 +254,8 @@ MonoBehaviour:
   rcsThrust: 150
   mainThrust: 15
   mainEngine: {fileID: 8300000, guid: bcaa5fb31fba41945a4a9bfc2e16befa, type: 3}
-  levelLoad: {fileID: 8300000, guid: b93b483b037abc045ab244e945cb4e2b, type: 3}
-  deathSound: {fileID: 8300000, guid: 2505ac1ca625f73449de1eb1d08bc4b0, type: 3}
+  success: {fileID: 8300000, guid: b93b483b037abc045ab244e945cb4e2b, type: 3}
+  death: {fileID: 8300000, guid: 2505ac1ca625f73449de1eb1d08bc4b0, type: 3}
 --- !u!82 &1009502863089618201
 AudioSource:
   m_ObjectHideFlags: 0
