@@ -329,13 +329,13 @@ PrefabInstance:
     - target: {fileID: 1009502863089618201, guid: f998f01b93a22b34d9a64b814d4b0abe,
         type: 3}
       propertyPath: m_PlayOnAwake
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1009502863089618201, guid: f998f01b93a22b34d9a64b814d4b0abe,
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: b93b483b037abc045ab244e945cb4e2b, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3990277636499449372, guid: f998f01b93a22b34d9a64b814d4b0abe,
         type: 3}
       propertyPath: m_Name

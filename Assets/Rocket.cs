@@ -6,8 +6,8 @@ public class Rocket : MonoBehaviour
     [SerializeField] float rcsThrust = 100f;
     [SerializeField] float mainThrust = 10f;
     [SerializeField] AudioClip mainEngine;
-    [SerializeField] AudioClip levelLoad;
-    [SerializeField] AudioClip deathSound;
+    [SerializeField] AudioClip success;
+    [SerializeField] AudioClip death;
 
     Rigidbody rigidBody;
     AudioSource audioSource;
@@ -44,19 +44,31 @@ public class Rocket : MonoBehaviour
                 //do nothing if friendly
                 break;
             case "Finish":
-                state = State.Transcending;
-                Invoke("LoadNextScene", 1f);
+                StartSuccess();
                 break;
             default:
-                print("Hit something deadly");
-                audioSource.Stop();
-                audioSource.PlayOneShot(deathSound);
-                state = State.Dying;
-                //ButtonsEnabled = false;
-                Invoke("LoadFirstScene", 1f);
+                StartDeath();
                 break;
         }
     }
+
+    private void StartDeath()
+    {
+        state = State.Dying;
+        audioSource.Stop();
+        audioSource.PlayOneShot(death);
+        //ButtonsEnabled = false;
+        Invoke("LoadFirstScene", 1f);
+    }
+
+    private void StartSuccess()
+    {
+        state = State.Transcending;
+        audioSource.Stop();
+        audioSource.PlayOneShot(success);
+        Invoke("LoadNextScene", 1f);
+    }
+
     private void LoadFirstScene()
     {
         SceneManager.LoadScene(0);
@@ -74,7 +86,6 @@ public class Rocket : MonoBehaviour
         if (Input.GetKey(KeyCode.Space)) //&& ButtonsEnabled == true
         {
             ApplyThrust();
-
         }
         else
         {
