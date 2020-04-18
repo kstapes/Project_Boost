@@ -5,6 +5,9 @@ public class Rocket : MonoBehaviour
 {
     [SerializeField] float rcsThrust = 100f;
     [SerializeField] float mainThrust = 10f;
+    [SerializeField] AudioClip mainEngine;
+    [SerializeField] AudioClip levelLoad;
+    [SerializeField] AudioClip deathSound;
 
     Rigidbody rigidBody;
     AudioSource audioSource;
@@ -18,19 +21,23 @@ public class Rocket : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody>();
         audioSource = GetComponent<AudioSource>();
+        
     }
         
     // Update is called once per frame
     void Update()
     {
+        //todo stop sound on death
         if (state == State.Alive)
         {
-            Thrust();
-            Rotate();
+            RespondToThrustInput();
+            RespondToRotateInput();
         }
     }
     void OnCollisionEnter(Collision collision)
     {
+        if(state != State.Alive){return;}
+
         switch (collision.gameObject.tag)
         {
             case "Friendly":
@@ -41,6 +48,9 @@ public class Rocket : MonoBehaviour
                 Invoke("LoadNextScene", 1f);
                 break;
             default:
+                print("Hit something deadly");
+                audioSource.Stop();
+                audioSource.PlayOneShot(deathSound);
                 state = State.Dying;
                 //ButtonsEnabled = false;
                 Invoke("LoadFirstScene", 1f);
@@ -54,19 +64,16 @@ public class Rocket : MonoBehaviour
     }
     private void LoadNextScene()
     {
+
         SceneManager.LoadScene(1);
+       
     }
 
-    private void Thrust()
+    private void RespondToThrustInput()
     {
         if (Input.GetKey(KeyCode.Space)) //&& ButtonsEnabled == true
         {
-            float thrustThisFrame = mainThrust * Time.deltaTime;
-            rigidBody.AddRelativeForce(Vector3.up * mainThrust);
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();
-            }
+            ApplyThrust();
 
         }
         else
@@ -75,10 +82,19 @@ public class Rocket : MonoBehaviour
         }
     }
 
-    private void Rotate()
+    private void ApplyThrust()
     {
-        rigidBody.freezeRotation = true; //take manual control of rotation
+        float thrustThisFrame = mainThrust * Time.deltaTime;
+        rigidBody.AddRelativeForce(Vector3.up * mainThrust);
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(mainEngine);
+        }
+    }
 
+    private void RespondToRotateInput()
+    {
+        rigidBody.freezeRotation = true; //take manual control of rotation 
         float rotationThisFrame = rcsThrust * Time.deltaTime;
 
         if (Input.GetKey(KeyCode.A)) //&& ButtonsEnabled == true
