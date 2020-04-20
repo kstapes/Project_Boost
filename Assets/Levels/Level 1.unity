@@ -271,10 +271,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 917270307, guid: f998f01b93a22b34d9a64b814d4b0abe, type: 3}
-      propertyPath: levelLoadDelay
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 945171693326615501, guid: f998f01b93a22b34d9a64b814d4b0abe,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -505,7 +505,7 @@ PrefabInstance:
     - target: {fileID: 3595410487374768254, guid: f1a118b0955195c489aa9c936a3381cf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.2
+      value: 47.94
       objectReference: {fileID: 0}
     - target: {fileID: 3595410487374768254, guid: f1a118b0955195c489aa9c936a3381cf,
         type: 3}
@@ -921,7 +921,7 @@ PrefabInstance:
     - target: {fileID: 2005123591333196070, guid: 5f8c5356e9712d444ba4fd5be6199208,
         type: 3}
       propertyPath: m_Center.x
-      value: 20
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3595410487374768254, guid: 5f8c5356e9712d444ba4fd5be6199208,
         type: 3}
@@ -1776,12 +1776,12 @@ PrefabInstance:
     - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.733717
+      value: 21.83
       objectReference: {fileID: 0}
     - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -55.803562
+      value: -76.12
       objectReference: {fileID: 0}
     - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
         type: 3}
@@ -1822,31 +1822,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.038000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.0228
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787682545013929772, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
-        type: 3}
-      propertyPath: m_FOVAxisMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787682545013929772, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
-        type: 3}
-      propertyPath: field of view
-      value: 55.638916
       objectReference: {fileID: 0}
     - target: {fileID: 6787682545013929774, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
         type: 3}
