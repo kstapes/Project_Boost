@@ -1995,31 +1995,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.038000003
       objectReference: {fileID: 0}
-    - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.0228
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787682545013929771, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787682545013929772, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
-        type: 3}
-      propertyPath: m_FOVAxisMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787682545013929772, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
-        type: 3}
-      propertyPath: field of view
-      value: 55.638916
-      objectReference: {fileID: 0}
     - target: {fileID: 6787682545013929774, guid: 04a8fa968e44dea43bd4ac7b82f3fe87,
         type: 3}
       propertyPath: m_Name

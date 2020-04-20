@@ -149,7 +149,8 @@ public class Rocket : MonoBehaviour
 
     private void RespondToRotateInput()
     {
-        rigidBody.freezeRotation = true; //take manual control of rotation
+        //rigidBody.freezeRotation = true; //take manual control of rotation
+        rigidBody.angularVelocity = Vector3.zero;
         float rotationThisFrame = rcsThrust * Time.deltaTime;
 
         if (Input.GetKey(KeyCode.A)) //&& ButtonsEnabled == true
@@ -161,6 +162,6 @@ public class Rocket : MonoBehaviour
             transform.Rotate(-Vector3.forward * rotationThisFrame);
         }
 
-        rigidBody.freezeRotation = false; //resume physics control of rotation
+        //rigidBody.freezeRotation = false; //resume physics control of rotation
     }
 }
